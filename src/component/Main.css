@@ -1,0 +1,205 @@
+.main {
+    background-color: rgb(29, 37, 50);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0;
+    background-color: #1b0f15;
+    overflow: hidden; 
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.banner .text_banner {
+    width: 40%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.title-char, .description-char {
+    display: inline-block;
+    opacity: 0;
+    animation: charFadeIn 0.3s forwards; /* مدت زمان کوتاه‌تر برای سریع‌تر شدن */
+    transform-origin: center;
+}
+
+@keyframes charFadeIn {
+    0% {
+        opacity: 0;
+        transform: rotateY(180deg) scale(0.6); /* چرخش قوی‌تر */
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0) scale(1);
+    }
+}
+
+.banner .img_banner {
+    width: 60%;
+    max-height: 630px;
+    object-fit: contain;
+    transform: translateX(100%) scale(0.8) rotate(10deg);
+    opacity: 0;
+    animation: slideIn 2.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%) scale(0.8) rotate(10deg);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(-10%) scale(1.05) rotate(-3deg);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateX(0) scale(1) rotate(0);
+        opacity: 1;
+    }
+}
+
+/* --------------------------------------------------------------- */
+
+/* ---------------- about-qualities ------------------------------ */
+
+.about-qualities {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item-qualities {
+    width: 25%;
+    min-height: 177px;
+    background-color: #cfb681;
+    color: #1b0f15;
+    padding: 0 8px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    z-index: 1;
+    opacity: 0; /* مخفی بودن در ابتدا */
+    transform: scale(0.8);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.item-qualities.left {
+    transform: translateX(-100px) scale(0.8); /* ورود از سمت چپ */
+}
+
+.item-qualities.center {
+    transform: translateY(50px) scale(0.8); /* ورود از پایین */
+}
+
+.item-qualities.right {
+    transform: translateX(100px) scale(0.8); /* ورود از سمت راست */
+}
+
+.item-qualities.visible {
+    opacity: 1;
+    transform: translateX(0) translateY(0) scale(1); /* بازگشت به موقعیت اصلی */
+}
+
+.item-qualities:hover {
+    transform: translateY(-10px) scale(1.05); 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* --------------------------------------------------------------- */
+
+/* ----------------  about-company  ------------------------------ */
+.about-company {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 800px;
+  position: relative; /* برای موقعیت‌دهی مطلق */
+  margin: 10px 0;
+}
+
+.about-left {
+  position: relative; /* برای قرار دادن عکس دوم نسبت به عکس اول */
+  width: 60%; /* عرض را به دلخواه تنظیم کنید */
+  /* height: 400px; */
+  overflow: hidden; /* مخفی کردن هر چیزی که از این بخش بیرون بزند */
+}
+
+.img-background {
+  width: 90%; /* عکس اول تمام عرض را بپوشاند */
+  /* height: auto; نسبت ابعاد را حفظ کند */
+  border-radius: 12px; /* اگر می‌خواهید گوشه‌ها گرد باشند */
+}
+
+
+.about-right {
+    width: 40%;
+    /* padding-top: 100px; */
+}
+
+.about-right .item-about {
+    display: flex;
+    gap: 10px;
+}
+
+.item-about .item-checked {
+    width: 10%;
+}
+/* --------------------------------------------------------------- */
+
+/* ---------------- partner-hotels ------------------------------ */
+.partner-hotels {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.partner-hotels .item-partner-hotels {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+/* --------------------------------------------------------------- */
+
+/* ---------------- Gallery -------------------------------------- */
+.gallery {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 40px 0;
+}
+
+.first-line, .second-line {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-gallery {
+    width: 14%;
+    padding: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+/* --------------------------------------------------------------- */

@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(29, 37, 50);
+}
+
+.img_Logo{
+    width: 15%;
+    height: auto;
+}

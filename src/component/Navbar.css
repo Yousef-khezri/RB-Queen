@@ -1,0 +1,226 @@
+/* استایل‌های Navbar */
+.navbar { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* لیست منوی اصلی */
+.nav_list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nav_list li {
+    list-style: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.nav_list li:hover {
+    color: #cfb681;
+}
+
+.nav_list li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav_list li a:hover {
+    color: #cfb681;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+}
+
+.btn_Languages {
+    display: flex;
+    align-items: center;
+    background-color: #cfb681;
+    color: rgb(29, 37, 50);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background-color: rgb(29, 37, 50);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(68, 68, 68, 0.2);
+    z-index: 1;
+}
+
+.language-option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.language-option img, .flag-icon {
+    width: 20px;
+    height: 20px; 
+    margin-right: 10px; 
+}
+
+.language-option:hover {
+    background-color: #cfb681; 
+    color: rgb(29, 37, 50);
+}
+
+/* استایل‌های منوی موبایل */
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+    position: relative; /* $$$$$$ موقعیت relative برای والد */
+    width: 30px;
+    height: 30px;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* لیست کشویی موبایل */
+.mobile-dropdown {
+    display: none;
+    list-style: none;
+    padding: 0;
+    background-color: rgb(29, 37, 50);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.3s ease forwards;
+
+    /* $$$$$$ تنظیم موقعیت برای باز شدن زیر menu-icon */
+    position: absolute;
+    top: 40px; /* تنظیم فاصله از بالای آیکون */
+    left: 0;   /* تنظیم دقیق زیر menu-icon */
+    width: 200px;
+    z-index: 10;
+}
+
+.mobile-dropdown li {
+    padding: 10px;
+}
+
+.mobile-dropdown li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.mobile-dropdown li:hover {
+    background-color: #cfb681;
+    color: rgb(29, 37, 50);
+}
+
+/* انیمیشن نمایش منوی موبایل */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* مدیا کوئری برای نمایش منوی موبایل */
+@media (max-width: 900px) {
+    .nav_list {
+        display: none; /* مخفی کردن منوی دسکتاپ */
+    }
+
+    .mobile-menu {
+        display: block; /* نمایش آیکون منوی موبایل */
+    }
+
+    .mobile-dropdown {
+        display: block; /* نمایش منوی کشویی موبایل */
+    }
+}
+
+
+/************************************************/
+/* .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+-------------------------------
+.nav_list{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nav_list li{
+    list-style: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.nav_list li:hover{
+    color: #cfb681;
+}
+
+.nav_list li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav_list li a:hover{
+    color: #cfb681;
+}
+
+ -------------- Dropdown Menu --------------------------- 
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 20x 20px;
+}
+
+.btn_Languages {
+    display: flex;
+    align-items: center;
+    background-color: #cfb681;
+    color: rgb(29, 37, 50);
+    border: none;
+    padding: 20x 20px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background-color:rgb(29, 37, 50);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(68, 68, 68, 0.2);
+    z-index: 1;
+}
+
+.language-option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.language-option img, .flag-icon {
+    width: 20px;
+    height: 20px; 
+    margin-right: 10px; 
+}
+
+.language-option:hover {
+    background-color:  #cfb681; 
+    color:rgb(29, 37, 50);
+} */
