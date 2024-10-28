@@ -222,44 +222,44 @@ function Main() {
 			<div className="gallery">
 				<div className="first-line">
 					<img
-						src="./images/gallery/item-gallery-01.jpg"
+						src="./images/item-gallery-01.jpg"
 						className="item-gallery"
 						alt="item gallery"
 					/>
 					<img
-						src="./images/gallery/item-gallery-02.jpg"
+						src="./images/item-gallery-02.jpg"
 						className="item-gallery"
 						alt="item gallery"
 					/>
 					<img
-						src="./images/gallery/item-gallery-03.jpg"
+						src="./images/item-gallery-03.jpg"
 						className="item-gallery"
 						alt="item gallery"
 					/>
 					<img
-						src="./images/gallery/item-gallery-04.jpg"
+						src="./images/item-gallery-04.jpg"
 						className="item-gallery"
 						alt="item gallery"
 					/>
 				</div>
 				<div className="second-line">
 					<img
-						src="./images/gallery/item-gallery-05.jpg"
+						src="./images/item-gallery-05.jpg"
 						className="item-gallery"
 						alt="item gallery"
 					/>
 					<img
-						src="./images/gallery/item-gallery-06.jpg"
+						src="./images/item-gallery-06.jpg"
 						className="item-gallery"
 						alt="item gallery"
 					/>
 					<img
-						src="./images/gallery/item-gallery-07.jpg"
+						src="./images/item-gallery-07.jpg"
 						className="item-gallery"
 						alt="item gallery"
 					/>
 					<img
-						src="./images/gallery/item-gallery-08.jpg"
+						src="./images/item-gallery-08.jpg"
 						className="item-gallery"
 						alt="item gallery"
 					/>
