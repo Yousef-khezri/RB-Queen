@@ -30,7 +30,7 @@ export default function Footer() {
 							src="./images/icon_location.png"
 							alt="address icon"
 						/>
-						<span>Köln</span>
+						<span>Koblenzer Str. 65, 53173 Bonn</span>
 					</div>
 					<div className="email">
 						<img
@@ -38,7 +38,7 @@ export default function Footer() {
 							src="./images/email.png"
 							alt="email icon"
 						/>
-						<span>test@example.com</span>
+						<span>info@rb-reinigungsservice.de</span>
 					</div>
 					<div className="telephone">
 						<img
@@ -46,7 +46,7 @@ export default function Footer() {
 							src="./images/telephone.png"
 							alt="telephone icon"
 						/>
-						<span>+49 162 612 8090</span>
+						<span>+49 174 973 6994</span>
 					</div>
 				</div>
 
