@@ -14,12 +14,14 @@ export default function Footer() {
 						/>
 						<h2>RB Queen GmbH</h2>
 					</div>
-					<span className="span_company">
-						Wir legen großen Wert auf Sicherheit und
-						Zuverlässigkeit. Deshalb vertrauen uns bereits tausende
-						Kunden ihre Räumlichkeiten an. Lassen Sie uns auch Ihr
-						Hotel mit höchstem Standard betreuen.
-					</span>
+					<p className="span_company">
+						Deshalb vertrauen uns bereits zahlreiche Kunden aus
+						verschiedenen Branchen ihre Räumlichkeiten an, von
+						Hotels über Büros bis hin zu Privathaushalten und
+						Gesundheitseinrichtungen. Lassen Sie uns auch Ihr Hotel,
+						Büro oder Zuhause mit höchstem Standard und
+						erstklassigem Service betreuen.
+					</p>
 				</div>
 
 				<div className="Contact_us">
