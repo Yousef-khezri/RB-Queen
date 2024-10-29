@@ -6,8 +6,9 @@ function Main() {
 	const [description, setDescription] = useState("");
 
 	useEffect(() => {
-		const titleText = " Welcome to My Website";
-		const descriptionText = "This is a sample website created with React.";
+		const titleText = " Willkommen bei RB Queen GmbH";
+		const descriptionText =
+			"Ihrem Partner für Professionelle Reinigungsdienstleistungen! ";
 
 		let titleIndex = 0;
 		let descriptionIndex = 0;
@@ -115,29 +116,29 @@ function Main() {
 			<div className="about-qualities">
 				<div className="item-qualities left">
 					<h2>Vertrauenswürdigkeit</h2>
-					<span>
+					<p>
 						Wir legen großen Wert auf Vertrauen und Transparenz.
 						Unser Engagement für Ehrlichkeit und Zuverlässigkeit
 						schafft eine solide Grundlage für langfristige
 						Partnerschaften.
-					</span>
+					</p>
 				</div>
 				<div className="item-qualities center">
 					<h2>Professionalität</h2>
-					<span>
+					<p>
 						Mit höchster Professionalität setzen wir uns für die
 						Bedürfnisse unserer Kunden ein. Unser Team arbeitet
 						präzise, organisiert und stets auf höchstem Niveau.
-					</span>
+					</p>
 				</div>
 				<div className="item-qualities right">
 					<h2>Kundenzufriedenheit</h2>
-					<span>
+					<p>
 						Die Zufriedenheit unserer Kunden ist unser größtes
 						Anliegen. Durch maßgeschneiderte Lösungen und
 						engagierten Service sorgen wir dafür, dass Ihre
 						Erwartungen stets übertroffen werden.
-					</span>
+					</p>
 				</div>
 			</div>
 			{/* -------------------- End about-qualities ---------------------- */}
@@ -159,12 +160,16 @@ function Main() {
 				<div className="about-right">
 					<h1>Hinter den Geschichten der RB Queen Company</h1>
 					<p>
-						Die RB Queen Company ist stolz darauf, erstklassige
-						Reinigungsdienstleistungen für Hotelzimmer anzubieten.
-						Unser engagiertes Team sorgt für Sauberkeit und Komfort,
-						damit sich die Gäste wie zu Hause fühlen. Hinter jeder
-						Geschichte steht unser unermüdlicher Einsatz für
-						Exzellenz und die Zufriedenheit unserer Kunden.
+						Die RB Queen GmbH ist ein etabliertes
+						Reinigungsunternehmen mit langjähriger Erfahrung und
+						Engagement für Qualität, Kundenzufriedenheit und
+						Umweltschutz. Seit 2016 bieten wir hochwertige
+						Reinigungsdienste für Hotels, Büros, Privathaushalte,
+						Seniorenheime, Krankenhäuser und vieles mehr an. Unser
+						Team aus hochqualifizierten Fachkräften stellt durch
+						schnelle, flexible und nachhaltige Reinigungsprozesse
+						sicher, dass jeder Raum makellos sauber ist und die
+						Erwartungen unserer Kunden stets erfüllt werden.
 					</p>
 					<div className="item-about">
 						<img
@@ -272,68 +277,3 @@ function Main() {
 }
 
 export default Main;
-
-//----------------------------------------------------------------
-// import "./Main.css";
-// import React, { useEffect, useState } from "react";
-
-// function Main() {
-// 	const [title, setTitle] = useState("");
-// 	const [description, setDescription] = useState("");
-
-// 	useEffect(() => {
-// 		const titleText = "Welcome to My Website";
-// 		const descriptionText = "This is a sample website created with React.";
-
-// 		let titleIndex = 0;
-// 		let descriptionIndex = 0;
-
-// 		// انیمیشن نمایش حروف عنوان
-// 		const titleInterval = setInterval(() => {
-// 			if (titleIndex < titleText.length) {
-// 				setTitle((prev) => prev + titleText[titleIndex]);
-// 				titleIndex++;
-// 			} else {
-// 				clearInterval(titleInterval);
-// 			}
-// 		}, 100); // زمان بین نمایش حروف (میلی‌ثانیه)
-
-// 		// انیمیشن نمایش حروف توضیحات
-// 		const descriptionInterval = setInterval(() => {
-// 			if (descriptionIndex < descriptionText.length) {
-// 				setDescription(
-// 					(prev) => prev + descriptionText[descriptionIndex]
-// 				);
-// 				descriptionIndex++;
-// 			} else {
-// 				clearInterval(descriptionInterval);
-// 			}
-// 		}, 80); // زمان بین نمایش حروف (میلی‌ثانیه)
-
-// 		return () => {
-// 			clearInterval(titleInterval);
-// 			clearInterval(descriptionInterval);
-// 		};
-// 	}, []);
-
-// 	return (
-// 		<div className="main">
-// 			<div className="banner">
-// 				<div className="txt_banner">
-// 					<div>
-// 						<h1 className="title">{title}</h1>
-// 						<p className="description">{description}</p>
-// 					</div>
-// 					<button>Learn More</button>
-// 				</div>
-// 				<img
-// 					className="img_banner"
-// 					src="./images/Banner.webp"
-// 					alt="banner"
-// 				/>
-// 			</div>
-// 		</div>
-// 	);
-// }
-
-// export default Main;

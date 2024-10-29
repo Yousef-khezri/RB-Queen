@@ -85,11 +85,12 @@
 
 .item-qualities {
     width: 25%;
-    min-height: 177px;
+    /* min-width: 309px; */
+    min-height: 206px;
     background-color: #cfb681;
     color: #1b0f15;
-    padding: 0 8px;
-    padding-bottom: 10px;
+    padding: 0 15px;
+    padding-top: 10px;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
     cursor: pointer;
@@ -97,6 +98,10 @@
     opacity: 0; /* مخفی بودن در ابتدا */
     transform: scale(0.8);
     transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.item-qualities p {
+    text-align: justify;
 }
 
 .item-qualities.left {
@@ -155,6 +160,10 @@
 .about-right .item-about {
     display: flex;
     gap: 10px;
+}
+
+.about-right p {
+    text-align: justify;
 }
 
 .item-about .item-checked {
