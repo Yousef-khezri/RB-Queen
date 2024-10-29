@@ -48,7 +48,7 @@ export default function Footer() {
 							src="./images/telephone.png"
 							alt="telephone icon"
 						/>
-						<span>+49 174 973 6994</span>
+						<span>+49 (0) 152 04 122 451</span>
 					</div>
 				</div>
 
