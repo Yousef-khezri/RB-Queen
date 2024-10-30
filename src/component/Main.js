@@ -8,30 +8,37 @@ function Main() {
 	useEffect(() => {
 		const titleText = " Willkommen bei RB Queen GmbH";
 		const descriptionText =
-			"Ihrem Partner für Professionelle Reinigungsdienstleistungen! ";
+			"Ihrem Partner für Professionelle Reinigungsdienstleistungen!";
 
 		let titleIndex = 0;
 		let descriptionIndex = 0;
 
 		const titleInterval = setInterval(() => {
 			if (titleIndex < titleText.length) {
-				setTitle((prev) => prev + titleText[titleIndex]);
+				setTitle(
+					(prev) => prev + titleText.slice(titleIndex, titleIndex + 1)
+				);
 				titleIndex++;
 			} else {
 				clearInterval(titleInterval);
 			}
-		}, 60); // زمان کوتاه‌تر برای نمایش سریع‌تر حروف
+		}, 60);
 
 		const descriptionInterval = setInterval(() => {
 			if (descriptionIndex < descriptionText.length) {
 				setDescription(
-					(prev) => prev + descriptionText[descriptionIndex]
+					(prev) =>
+						prev +
+						descriptionText.slice(
+							descriptionIndex,
+							descriptionIndex + 1
+						)
 				);
 				descriptionIndex++;
 			} else {
 				clearInterval(descriptionInterval);
 			}
-		}, 50); // زمان کوتاه‌تر برای نمایش سریع‌تر حروف
+		}, 50);
 
 		return () => {
 			clearInterval(titleInterval);
@@ -70,7 +77,7 @@ function Main() {
 						<h1 className="title">
 							{title.split("").map((char, index) =>
 								char === " " ? (
-									<span key={index}>&nbsp;</span> // نمایش فاصله بین کلمات
+									<span key={index}>&nbsp;</span>
 								) : (
 									<span
 										key={index}
@@ -211,6 +218,11 @@ function Main() {
 			<div className="partner-hotels">
 				<img
 					src="./images/motel-one.svg"
+					className="item-partner-hotels"
+					alt="item-partner-hotels"
+				/>
+				<img
+					src="./images/steigenberger-hotel.png"
 					className="item-partner-hotels"
 					alt="item-partner-hotels"
 				/>

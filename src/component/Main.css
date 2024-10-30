@@ -29,6 +29,10 @@
     font-weight: bold;
 }
 
+.description {
+    font-size: 18px;
+}
+
 .title-char, .description-char {
     display: inline-block;
     opacity: 0;

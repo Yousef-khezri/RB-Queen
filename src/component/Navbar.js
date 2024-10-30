@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -26,13 +27,13 @@ function Navbar() {
 			<div className="desktop-menu">
 				<ul className="nav_list">
 					<li>
-						<a href="#Our_services">Unser Unternehmen</a>
+						<Link to="/our-company">Unser Unternehmen</Link>
 					</li>
 					<li>
-						<a href="#Our_company">Unsere Dienstleistungen</a>
+						<Link to="/our_services">Unsere Dienstleistungen</Link>
 					</li>
 					<li>
-						<a href="#contact">Kontakt</a>
+						<Link to="/contact">Kontakt</Link>
 					</li>
 				</ul>
 			</div>
@@ -48,13 +49,15 @@ function Navbar() {
 				{isMobileMenuOpen && (
 					<ul className="mobile-dropdown">
 						<li>
-							<a href="#Our_services">Unser Unternehmen</a>
+							<Link to="/our-company">Unser Unternehmen</Link>
 						</li>
 						<li>
-							<a href="#Our_company">Unsere Dienstleistungen</a>
+							<Link to="/our_services">
+								Unsere Dienstleistungen
+							</Link>
 						</li>
 						<li>
-							<a href="#contact">Kontakt</a>
+							<Link to="/contact">Kontakt</Link>
 						</li>
 					</ul>
 				)}

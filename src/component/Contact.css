@@ -1,0 +1,158 @@
+.main_Contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------- Send Box Email ---------------------- */
+.main_Contact .Send_box_Text {
+    width: 80%;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 30px rgba(0, 0,0,0.8);
+    border-radius: 12px;
+}
+
+
+/* ----------- Effect ---------------- */
+/* تعریف انیمیشن‌ها */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0; /* در ابتدا شفافیت صفر */
+        transform: translateY(20px); /* از 20 پیکسل پایین‌تر شروع می‌کند */
+    }
+    50% {
+        opacity: 0.5; /* شفافیت نیمه‌نرم */
+    }
+    100% {
+        opacity: 1; /* در انتها شفافیت کامل */
+        transform: translateY(0); /* به موقعیت اصلی برمی‌گردد */
+    }
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0; /* شفافیت صفر */
+        transform: scale(0.8); /* در ابتدا کمی کوچک‌تر */
+    }
+    50% {
+        opacity: 0.5; /* شفافیت نیمه‌نرم */
+        transform: scale(1.05); /* بزرگ‌تر می‌شود */
+    }
+    100% {
+        opacity: 1; /* شفافیت کامل */
+        transform: scale(1); /* به اندازه اصلی برمی‌گردد */
+    }
+}
+
+/* تنظیمات برای عکس */
+.img_contact_us {
+    width: 38%;
+    margin: 10px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* سایه برای عمق بیشتر */
+    animation: fadeInScale 1s ease forwards; /* انیمیشن برای عکس */
+}
+
+/* تنظیمات برای باکس متن */
+.Send_box_Text .right_Box {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid #fff;
+    padding: 20px;
+    background: linear-gradient(145deg, #ab9c96, #d3c9bc);
+    border-radius: 20px;
+    text-align: center;
+    animation: fadeInUp 1s ease forwards; /* انیمیشن برای باکس */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* سایه برای عمق بیشتر */
+    transition: transform 0.2s; /* انیمیشن برای تغییرات اندازه */
+}
+
+/* تغییر سایز باکس هنگام هاور */
+.Send_box_Text .right_Box:hover {
+    transform: scale(1.02); /* کمی بزرگ‌تر می‌شود */
+}
+
+/* انیمیشن متن داخل باکس */
+.Send_box_Text .right_Box h1, 
+.Send_box_Text .right_Box h3 {
+    opacity: 0; /* در ابتدا شفافیت صفر */
+    animation: fadeInUp 1s ease forwards; /* انیمیشن ورودی */
+}
+
+.Send_box_Text .right_Box h1 {
+    animation-delay: 0.2s; /* کمی تأخیر برای عنوان */
+}
+
+.Send_box_Text .right_Box h3 {
+    animation-delay: 0.4s; /* کمی تأخیر برای زیرعنوان */
+}
+/* --------------------------------- */
+
+
+.right_Box h1 {
+	font-size: 24px;
+	color: #333;
+	margin-bottom: 20px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.right_Box h3 {
+	font-size: 18px;
+	color: #666;
+	margin: 10px 0;
+}
+
+.input-field,
+.textarea-field {
+	width: 90%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: inset 8px 8px 15px rgba(0, 0, 0, 0.2),
+		inset -8px -8px 15px rgba(255, 255, 255, 0.7);
+	font-size: 16px;
+	background: #f0f0f0;
+}
+
+.input-field:focus,
+.textarea-field:focus {
+	outline: none;
+	box-shadow: inset 8px 8px 15px rgba(0, 0, 0, 0.3),
+		inset -8px -8px 15px rgba(255, 255, 255, 0.8);
+}
+
+.send-button {
+	width: 90%;
+	padding: 15px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	background: linear-gradient(145deg, #6e72fc, #ad1deb);
+	border: none;
+	border-radius: 10px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3),
+		-5px -5px 15px rgba(255, 255, 255, 0.1);
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.send-button:hover {
+	background: linear-gradient(145deg, #575bf4, #9b17d5);
+}
+
+.send-button:active {
+	box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.3),
+		inset -5px -5px 15px rgba(255, 255, 255, 0.1);
+	transform: scale(0.98);
+}
+/* ----------- End Send Box Email ---------------------- */

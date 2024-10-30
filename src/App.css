@@ -4,14 +4,6 @@ html, body {
 }
 
 
-/* .App {
-    min-width: 1130px; 
-    width: 100%; 
-    overflow-x: hidden; 
-    background-color: rgb(29, 37, 50); 
-    color: white;
-} */
-
 /* کانتینر اصلی */
 .App {
     min-width: 1130px; /* حداقل عرض برای صفحه */

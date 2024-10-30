@@ -32,7 +32,7 @@ export default function Footer() {
 							src="./images/icon_location.png"
 							alt="address icon"
 						/>
-						<span>Koblenzer Str. 65, 53173 Bonn</span>
+						<span>Koblenzer Straße 65, 53173 Bonn</span>
 					</div>
 					<div className="email">
 						<img
